@@ -1,0 +1,16 @@
+<ion-view view-title="Cuboid">
+  <ion-content scroll="false">
+    <fa-app style="height: 420px; width: 420px; margin: 0;">
+      <fa-modifier fa-size="[1800, 3000]" fa-translate="[-900, -1500, -600]">
+        <fa-surface fa-background-color="'#073642'"></fa-surface>
+      </fa-modifier>
+      <fa-modifier fa-size="[100, 100]" fa-align="[.5, .5]" fa-rotate="getRotate()" fa-transform-order="['translate', 'rotate']" fa-opacity=".5">
+        <fa-modifier fa-origin="[.5, .5]" fa-translate="[-50, -50, 50]">
+          <fa-cuboid fa-dimensions="[100, 100, 100]">
+            <fa-surface ng-repeat="surface in surfaces" fa-properties="{backfaceVisibility: 'visible'}" fa-background-color="surface.bgColor"></fa-surface>
+          </fa-cuboid>
+        </fa-modifier>
+      </fa-modifier>
+    </fa-app>
+  </ion-content>
+</ion-view>
