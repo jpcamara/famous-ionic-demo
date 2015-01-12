@@ -19,3 +19,7 @@ Running it on ios:
     ionic platform add ios
     ionic build ios
     ionic emulate ios
+
+### Attribution
+
+All of the Famo.us examples are taken with only slight modification from the [famous-angular-examples](https://github.com/thomasstreet/famous-angular-examples) project.
